@@ -1,0 +1,79 @@
+2025-01-05 10:51:32.554 +05:30 [INF] STARTING APPLICATION.
+2025-01-05 10:51:43.589 +05:30 [INF] Admin menu accessed.
+2025-01-05 10:51:49.182 +05:30 [INF] Admin logged in: admin
+2025-01-05 10:52:06.548 +05:30 [INF] Admin logged out: admin
+2025-01-05 10:52:15.349 +05:30 [INF] STOPPING APPLICATION.
+2025-01-05 11:45:30.483 +05:30 [INF] STARTING APPLICATION.
+2025-01-05 11:45:32.422 +05:30 [INF] Admin login accessed.
+2025-01-05 11:45:38.237 +05:30 [INF] Admin logged in: admin
+2025-01-05 11:45:38.237 +05:30 [INF] Admin menu accessed.
+2025-01-05 11:45:53.596 +05:30 [INF] Admin logged out: admin
+2025-01-05 11:45:54.571 +05:30 [INF] STOPPING APPLICATION.
+2025-01-05 11:49:54.017 +05:30 [INF] STARTING APPLICATION.
+2025-01-05 11:49:55.662 +05:30 [INF] STOPPING APPLICATION.
+2025-01-05 12:30:12.775 +05:30 [INF] STARTING APPLICATION.
+2025-01-05 12:30:19.938 +05:30 [INF] User registration accessed.
+2025-01-05 12:30:34.467 +05:30 [INF] STOPPING APPLICATION.
+2025-01-05 14:55:33.825 +05:30 [INF] STARTING APPLICATION.
+2025-01-05 14:55:34.785 +05:30 [INF] User login accessed.
+2025-01-05 14:55:41.026 +05:30 [INF] User logged in: Rahul
+2025-01-05 14:56:06.071 +05:30 [ERR] Error booking room
+Microsoft.Data.SqlClient.SqlException (0x80131904): Room is already booked.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RoomBookingSystem.Services.BookingService.BookRoom(Int32 roomNumber, String username) in D:\RoomBookingSystem\RoomBookingSystem\Services\BookingService.cs:line 33
+ClientConnectionId:0fdccbf5-99d4-41cb-9735-747db6338fda
+Error Number:50000,State:1,Class:16
+2025-01-05 14:56:06.093 +05:30 [ERR] Error booking room. - Room is already booked.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Room is already booked.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RoomBookingSystem.Services.BookingService.BookRoom(Int32 roomNumber, String username) in D:\RoomBookingSystem\RoomBookingSystem\Services\BookingService.cs:line 33
+   at RoomBookingSystem.UserRoomService.BookRoom(String username) in D:\RoomBookingSystem\RoomBookingSystem\Services\UserRoomService.cs:line 76
+ClientConnectionId:0fdccbf5-99d4-41cb-9735-747db6338fda
+Error Number:50000,State:1,Class:16
+2025-01-05 14:56:17.924 +05:30 [INF] Room Number 400 booked by User: Rahul
+2025-01-06 09:20:55.909 +05:30 [INF] STARTING APPLICATION.
+2025-01-06 09:21:42.651 +05:30 [INF] Admin login accessed.
+2025-01-06 09:21:46.519 +05:30 [INF] Admin logged in: admin
+2025-01-06 09:21:46.519 +05:30 [INF] Admin menu accessed.
+2025-01-06 09:21:52.995 +05:30 [INF] Admin logged out: admin
+2025-01-06 09:21:53.767 +05:30 [INF] STOPPING APPLICATION.
+2025-01-07 09:32:41.404 +05:30 [INF] STARTING APPLICATION.
+2025-01-07 09:33:36.255 +05:30 [INF] Admin login accessed.
+2025-01-07 09:33:43.274 +05:30 [INF] Admin logged in: admin
+2025-01-07 09:33:43.274 +05:30 [INF] Admin menu accessed.
+2025-01-07 09:39:00.923 +05:30 [INF] Admin logged out: admin
+2025-01-07 09:39:04.292 +05:30 [INF] User login accessed.
+2025-01-07 09:39:25.140 +05:30 [INF] User login failed.
+2025-01-07 09:39:38.646 +05:30 [INF] User login accessed.
+2025-01-07 09:39:43.847 +05:30 [INF] User logged in: Rahul
+2025-01-07 09:43:09.581 +05:30 [INF] User logged out: Rahul
+2025-01-07 09:43:13.236 +05:30 [INF] User registration accessed.
+2025-01-07 09:45:25.711 +05:30 [INF] User registered: Logan
+2025-01-07 09:46:07.789 +05:30 [INF] STOPPING APPLICATION.
+2025-01-07 15:21:39.306 +05:30 [INF] STARTING APPLICATION.
+2025-01-07 15:22:03.258 +05:30 [INF] Admin login accessed.
+2025-01-08 13:48:48.065 +05:30 [INF] STARTING APPLICATION.
+2025-01-08 13:48:49.672 +05:30 [INF] Admin login accessed.
+2025-01-08 13:48:59.271 +05:30 [INF] Admin logged in: admin
+2025-01-08 13:48:59.271 +05:30 [INF] Admin menu accessed.
+2025-01-08 13:49:06.734 +05:30 [INF] Admin logged out: admin
+2025-01-08 13:49:10.177 +05:30 [INF] User login accessed.
+2025-01-08 13:49:16.963 +05:30 [INF] User logged in: Rahul
+2025-01-08 13:49:27.637 +05:30 [INF] User logged out: Rahul
+2025-01-08 13:49:28.768 +05:30 [INF] STOPPING APPLICATION.
